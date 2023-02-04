@@ -47,7 +47,7 @@ const generateImgLoc = () => {
   );
 
   const left = Math.floor(Math.random() * (window?.innerWidth - IMAGE_WIDTH));
-  const imgNum = Math.floor(Math.random() * 10 + 1);
+  const imgNum = Math.floor(Math.random() * 23 + 1);
 
   var top = topPre;
   if (topPre > 200 && topPre < 400) {
