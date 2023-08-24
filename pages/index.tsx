@@ -55,7 +55,7 @@ const generateImgLoc = () => {
   );
 
   const left = Math.floor(Math.random() * (window?.innerWidth - IMAGE_WIDTH));
-  const imgNum = Math.floor(Math.random() * 23 + 1);
+  const imgNum = Math.floor(Math.random() * 4 + 1);
 
   var top = topPre;
   if (topPre > 200 && topPre < 400) {
@@ -113,7 +113,7 @@ export default function Home() {
   }, [setTextLoc2]);
 
   return (
-    <div className="bg-gradient-to-r from-cyan-300 to-yellow-100 h-screen w-screen flex flex-col flex-grow justify-center relative font-sans">
+    <div className="bg-gradient-to-r from-purple-300 to-yellow-100 h-screen w-screen flex flex-col flex-grow justify-center relative font-sans">
       <div className="flex flex-col text-[100px] w-screen h-screen items-center justify-center">
         <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-[75px] w-[675px]">
           <div className="text-[30px] text-slate-600 justify-center align-center h-[50px] w-[500px] grow-0">
