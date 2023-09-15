@@ -17,16 +17,19 @@ const calcTimeLeft = () => {
   // const [time, setTime] = useState({hours, minutes, seconds});
   const difference = +new Date(`09/21/2023`) - +date;
   if (difference >= 0) {
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((difference / 1000 / 60) % 60);
     const seconds = Math.floor((difference / 1000) % 60);
     return {
+      days: pad2Digits(days),
       hours: pad2Digits(hours),
       minutes: pad2Digits(minutes),
       seconds: pad2Digits(seconds),
     };
   } else {
     return {
+      days: "00",
       hours: "00",
       minutes: "00",
       seconds: "00",
@@ -119,7 +122,8 @@ export default function Home() {
             MEGHAN&apos;S 21ST BIRTHDAY!!!! 😎
           </div>
           <div className="pb-0">
-            {timeLeft.hours}
+            {timeLeft.days}
+            <span className="text-[40px] p-1">D&nbsp;</span>:{timeLeft.hours}
             <span className="text-[40px] p-1">H&nbsp;</span>:{timeLeft.minutes}
             <span className="text-[40px] p-1">M&nbsp;</span>:{timeLeft.seconds}
             <span className="text-[40px] p-1">S&nbsp;</span>
