@@ -15,7 +15,7 @@ function pad2Digits(num: number) {
 const calcTimeLeft = () => {
   const date = new Date();
   // const [time, setTime] = useState({hours, minutes, seconds});
-  const difference = +new Date(`08/25/2023`) - +date;
+  const difference = +new Date(`09/21/2023`) - +date;
   if (difference >= 0) {
     const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((difference / 1000 / 60) % 60);
@@ -25,13 +25,12 @@ const calcTimeLeft = () => {
       minutes: pad2Digits(minutes),
       seconds: pad2Digits(seconds),
     };
-  }
-  else{
-    return{
+  } else {
+    return {
       hours: "00",
       minutes: "00",
       seconds: "00",
-    }; 
+    };
   }
 };
 
@@ -117,7 +116,7 @@ export default function Home() {
       <div className="flex flex-col text-[100px] w-screen h-screen items-center justify-center">
         <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-[75px] w-[675px]">
           <div className="text-[30px] text-slate-600 justify-center align-center h-[50px] w-[500px] grow-0">
-            MANASI&apos;S 21ST BIRTHDAY!!!! 😎
+            MEGHAN&apos;S 21ST BIRTHDAY!!!! 😎
           </div>
           <div className="pb-0">
             {timeLeft.hours}
@@ -127,7 +126,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div
+        {/* <div
           style={{ top: imgLoc.top, left: imgLoc.left }}
           className={`fixed rounded-lg animate-fade-in  w-[300px] h-[300px]`}
           key={imgLoc.left}
@@ -153,7 +152,7 @@ export default function Home() {
             height="150"
             alt="google picture"
           />
-        </div>
+        </div> */}
 
         <div
           style={{ top: textLoc.top, left: textLoc.left }}
