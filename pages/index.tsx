@@ -117,7 +117,7 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-r from-purple-300 to-yellow-100 h-screen w-screen flex flex-col flex-grow justify-center relative font-sans">
       <div className="flex flex-col text-[100px] w-screen h-screen items-center justify-center">
-        <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-[75px] w-[675px]">
+        <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-[75px] w-[1000px]">
           <div className="text-[30px] text-slate-600 justify-center align-center h-[50px] w-[500px] grow-0">
             MEGHAN&apos;S 21ST BIRTHDAY!!!! 😎
           </div>
