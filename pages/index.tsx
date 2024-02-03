@@ -129,16 +129,18 @@ export default function Home() {
 
   return (
     <div className="bg-gradient-to-tr from-fuchsia-500 to-cyan-500 h-screen w-screen flex flex-col flex-grow justify-center relative font-sans">
-      <div className="flex flex-col text-[100px] w-screen h-screen items-center justify-center">
-        <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-[75px] w-[800px]">
-          <div className="text-[30px] text-slate-600 justify-center align-center h-[50px] w-[500px] grow-0">
+      <div className="flex flex-col text-[25px] sm:text-[100px] w-screen h-screen items-center justify-center">
+        <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-4 sm:px-[75px] w-[400px] sm:w-[800px]">
+          <div className="text-[15px] sm:text-[30px] text-slate-600 justify-center align-center h-[25px] sm:h-[50px] w-[250px] sm:w-[500px]  grow-0">
             SARAH&apos;S 22ND BIRTHDAY!!!! 😎
           </div>
           <div className="pb-0">
             {timeLeft.hours}
-            <span className="text-[40px] p-1">H&nbsp;</span>:{timeLeft.minutes}
-            <span className="text-[40px] p-1">M&nbsp;</span>:{timeLeft.seconds}
-            <span className="text-[40px] p-1">S&nbsp;</span>
+            <span className="text-[20px] sm:text-[40px] p-1">H&nbsp;</span>:
+            {timeLeft.minutes}
+            <span className="text-[20px] sm:text-[40px] p-1">M&nbsp;</span>:
+            {timeLeft.seconds}
+            <span className="text-[20px] sm:text-[40px] p-1">S&nbsp;</span>
           </div>
         </div>
 
@@ -149,7 +151,7 @@ export default function Home() {
         >
           <Image
             src={`${imgLoc.src}`}
-            className="rounded-full animate-fade-in"
+            className="rounded-full h-24 sm:h-64 w-24 sm:w-64 animate-fade-in"
             width="200"
             height="200"
             alt="google picture"
@@ -163,7 +165,7 @@ export default function Home() {
         >
           <Image
             src={`${imgLoc2.src}`}
-            className="rounded-full h-50 w-50 overflow-clip animate-fade-in "
+            className="rounded-full h-24 sm:h-64 w-24 sm:w-64 overflow-clip animate-fade-in "
             width="200"
             height="200"
             alt="google picture"
@@ -177,7 +179,7 @@ export default function Home() {
         >
           <Image
             src={`${imgLoc3.src}`}
-            className="rounded-full h-50 w-50 overflow-clip animate-fade-in "
+            className="rounded-full h-24 sm:h-64 w-24 sm:w-64 overflow-clip animate-fade-in "
             width="200"
             height="200"
             alt="google picture"
@@ -186,7 +188,7 @@ export default function Home() {
 
         <div
           style={{ top: textLoc.top, left: textLoc.left }}
-          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[40px]`}
+          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[15px] sm:text-[30px]`}
           key={textLoc.left}
         >
           🥳
@@ -194,21 +196,21 @@ export default function Home() {
 
         <div
           style={{ top: textLoc2.top, left: textLoc2.left }}
-          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[40px]`}
+          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[15px] sm:text-[30px]`}
           key={textLoc2.left}
         >
           🎉
         </div>
         <div
           style={{ top: textLoc3.top, left: textLoc3.left }}
-          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[40px]`}
+          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[15px] sm:text-[30px]`}
           key={textLoc3.left}
         >
           sarah
         </div>
         <div
           style={{ top: textLoc4.top, left: textLoc4.left }}
-          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[40px]`}
+          className={`fixed rounded-lg animate-fade-in w-[600px] h-[200px] text-[15px] sm:text-[30px]`}
           key={textLoc4.left}
         >
           bday
