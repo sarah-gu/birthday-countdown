@@ -130,17 +130,17 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-tr from-fuchsia-500 to-cyan-500 h-screen w-screen flex flex-col flex-grow justify-center relative font-sans">
       <div className="flex flex-col text-[25px] sm:text-[100px] w-screen h-screen items-center justify-center">
-        <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-4 sm:px-[75px] w-[400px] sm:w-[800px]">
-          <div className="text-[15px] sm:text-[30px] text-slate-600 justify-center align-center h-[25px] sm:h-[50px] w-[250px] sm:w-[500px]  grow-0">
+        <div className="z-[10000] bg-white p-4 m-4 rounded-lg shadow-lg px-4 sm:px-[75px] w-[200px] sm:w-[470px]">
+          <div className="text-[15px] sm:text-[24px] text-slate-600 justify-center align-center h-[25px] sm:h-[30px] w-[250px] sm:w-[400px]  grow-0">
             SARAH&apos;S 22ND BIRTHDAY!!!! 😎
           </div>
-          <div className="pb-0">
+          <div className="z-[100] sm:text-[70px]">
             {timeLeft.hours}
-            <span className="text-[20px] sm:text-[40px] p-1">H&nbsp;</span>:
+            <span className="text-[10px] sm:text-[40px] p-0">H&nbsp;</span>:
             {timeLeft.minutes}
-            <span className="text-[20px] sm:text-[40px] p-1">M&nbsp;</span>:
+            <span className="text-[20px] sm:text-[40px] p-0">M&nbsp;</span>:
             {timeLeft.seconds}
-            <span className="text-[20px] sm:text-[40px] p-1">S&nbsp;</span>
+            <span className="text-[20px] sm:text-[40px] p-0">S&nbsp;</span>
           </div>
         </div>
 
