@@ -152,8 +152,8 @@ export default function Home() {
           <Image
             src={`${imgLoc.src}`}
             className="rounded-full h-24 sm:h-64 w-24 sm:w-64 animate-fade-in"
-            width="200"
-            height="200"
+            layout={"fill"}
+            objectFit={"contain"}
             alt="google picture"
           />
         </div>
@@ -166,8 +166,8 @@ export default function Home() {
           <Image
             src={`${imgLoc2.src}`}
             className="rounded-full h-24 sm:h-64 w-24 sm:w-64 overflow-clip animate-fade-in "
-            width="200"
-            height="200"
+            layout={"fill"}
+            objectFit={"contain"}
             alt="google picture"
           />
         </div>
@@ -180,8 +180,8 @@ export default function Home() {
           <Image
             src={`${imgLoc3.src}`}
             className="rounded-full h-24 sm:h-64 w-24 sm:w-64 overflow-clip animate-fade-in "
-            width="200"
-            height="200"
+            layout={"fill"}
+            objectFit={"contain"}
             alt="google picture"
           />
         </div>
